@@ -1,0 +1,179 @@
+/* variable css */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #00aeff;
+
+    --off-white: #cecece;
+    --sonic-silver: #707070;
+    --white: #ffffff;
+    --light-black: #303030;
+    --off-black: #141414;
+    --black: #000000;
+}
+
+/* Font face import */
+@font-face {
+    font-family: Poppins;
+    src: url(./../Poppins-Regular.ttf);
+}
+
+/* <============= Common for all section CSS =============> */
+.intersection-hr {
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid var(--light-black);
+}
+
+/* <============= Reset all parameters CSS =============> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+input,
+button,
+.icon {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* <============= Home Section CSS =============> */
+.home {
+    margin: 20px;
+}
+
+.home-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.home-subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.home-para {
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.roadmap {
+    width: 1000px;
+    margin: auto auto;
+}
+
+.roadmap-title p {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: var(--off-white);
+    color: var(--black);
+    border-radius: 8px;
+}
+
+.roadmap-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid var(--light-black);
+    border-radius: 8px;
+}
+
+.skill:hover {
+    background-color: var(--black);
+}
+
+.skill-header {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.skill-para {
+    font-size: 13px;
+}
+
+/* <============= Footer Section CSS =============> */
+
+footer p {
+    text-align: center;
+}
+
+footer p i {
+    color: var(--red);
+}
+
+/* <============= Media Queries CSS =============> */
+
+@media (max-width: 1000px) {
+    .roadmap {
+        width: 100%;
+    }
+
+    .roadmap-flex-box {
+        justify-content: center;
+    }
+
+    .skill {
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-title {
+        font-size: 22px;
+    }
+
+    .home-subtitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .home-para {
+        width: 90%;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--off-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+    border-radius: 10px;
+}
