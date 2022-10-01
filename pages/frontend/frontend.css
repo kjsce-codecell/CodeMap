@@ -61,7 +61,7 @@ body {
     overflow-y: hidden;
 }
 
-.page{
+.page {
     display: flex;
     justify-content: space-between;
 }
@@ -72,18 +72,11 @@ body {
 
 .left-section {
     overflow: scroll;
-    height:100vh;
+    height: 100vh;
     width: 22vw;
     margin-left: 30px;
-    border-right: solid 2px;
-}
-
-.right-section {
-    overflow-y: scroll;
-    width: 78vw;
-    height:100vh;
     padding: 20px;
-    text-align: justify;
+    border-right: solid 2px;
 }
 
 .inner-section {
@@ -92,10 +85,15 @@ body {
 
 .inner-section a {
     align-items: center;
+    transition: 200ms;
 }
 
 .inner-section a i {
     font-size: 12px;
+}
+
+.inner-subsections a:hover {
+    margin-left: 15px;
 }
 
 .inner-subsections {
@@ -109,13 +107,47 @@ body {
 }
 
 
+/* <======== Right Section CSS ========> */
+.right-section {
+    overflow-y: scroll;
+    width: 78vw;
+    height: 100vh;
+    padding: 40px;
+    text-align: justify;
+}
+
+.right-section h2 {
+    margin: 20px 40px;
+}
+
+.subsections-info {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.subsections-info h3 {
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.subsections-info p {
+    letter-spacing: 0.5px;
+}
+
 /* <============= Scroll Bar CSS =============> */
+/* Width */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
     background-color: var(--off-black);
 }
 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--grey);
+    background-color: var(--light-black);
     border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--black);
 }
