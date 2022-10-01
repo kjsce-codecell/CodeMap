@@ -1,8 +1,7 @@
 /* variable css */
 :root {
     --primary-color: #000000;
-    --secondary-color: #00aeff;
-
+    --secondary-color: #fa4454;
     --off-white: #cecece;
     --sonic-silver: #707070;
     --white: #ffffff;
@@ -14,14 +13,7 @@
 /* Font face import */
 @font-face {
     font-family: Poppins;
-    src: url(./../Poppins-Regular.ttf);
-}
-
-/* <============= Common for all section CSS =============> */
-.intersection-hr {
-    width: 50%;
-    margin: 50px auto;
-    border: 1px solid var(--light-black);
+    src: url(../font/Poppins-Regular.ttf);
 }
 
 /* <============= Reset all parameters CSS =============> */
@@ -55,30 +47,37 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* <============= Home Section CSS =============> */
-.home {
-    margin: 20px;
+/* <============= Common for all section CSS =============> */
+.inter-section-hr {
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid var(--light-black);
 }
 
-.home-title {
+.title {
     text-align: center;
     font-size: 32px;
     font-weight: 400;
 }
 
-.home-subtitle {
+.subtitle {
     text-align: center;
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 2px;
 }
 
-.home-para {
+.para {
     text-align: center;
     width: 60%;
     margin: 20px auto;
     font-size: 14px;
     font-weight: 300;
+}
+
+/* <============= Home Section CSS =============> */
+.home {
+    margin: 20px;
 }
 
 .roadmap {
@@ -98,6 +97,10 @@ html {
 .roadmap-flex-box {
     display: flex;
     flex-wrap: wrap;
+}
+
+.roadmap-flex-box a {
+    display: flex;
 }
 
 .skill {
@@ -122,7 +125,24 @@ html {
     font-size: 13px;
 }
 
+/* <============= Home Section CSS =============> */
+
+.contribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contribute i {
+    margin: 10px;
+    font-size: 20px;
+}
+
 /* <============= Footer Section CSS =============> */
+
+footer {
+    padding: 4% 10%;
+}
 
 footer p {
     text-align: center;
@@ -130,6 +150,48 @@ footer p {
 
 footer p i {
     color: var(--red);
+}
+
+.heart {
+    color: var(--secondary-color);
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo label {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo label img {
+    height: 30px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-media-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-media-links i {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.footer-media-links i:hover {
+    transform: scale(0.9);
+    color: var(--off-white);
 }
 
 /* <============= Media Queries CSS =============> */
@@ -165,9 +227,24 @@ footer p i {
     .skill {
         width: 100%;
     }
+
+    .footer-logo label {
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-logo label img {
+        height: 15px;
+    }
+    
+    .footer-text {
+        font-size: 12px;
+    }
 }
 
-/* Scroll Bar CSS */
+/* <============= Scroll Bar CSS =============> */
 ::-webkit-scrollbar {
     width: 4px;
     background-color: var(--off-black);
