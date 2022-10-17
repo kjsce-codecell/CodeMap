@@ -125,3 +125,4 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/kjsce-
   | ------|----------|
   |Aditya Chandran|<a href="https://github.com/Aditya-Chandrn">Aditya Chandran</a>|
   |Hardik Shah| <a href="https://github.com/HardikShah563">Hardik Shah</a>|
+  |Dhruv Bhagatkar|<a href="https://github.com/dhruv2003">Dhruv Bhagatkar</a>|
