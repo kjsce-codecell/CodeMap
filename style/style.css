@@ -129,6 +129,16 @@ html {
 }
 
 /* <============= Open Source Section CSS =============> */
+.open-source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-source img {
+    width: 30vw;
+}
+
 .open-source .title {
     font-size: 24px;
 }
@@ -142,6 +152,7 @@ html {
 .contribute a {
     padding: 6px 8px;
     color: var(--green);
+    font-weight: 800;
     background-color: var(--off-black);
     border: 1px solid var(--light-black);
     border-radius: 12px;
@@ -160,6 +171,8 @@ html {
 .contributing-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
     font-size: 12px;
     margin: 20px auto;
 }
@@ -246,6 +259,18 @@ footer p i {
     .skill {
         width: 45%;
     }
+
+    .open-source {
+        flex-wrap: wrap;
+    }
+
+    .open-source img {
+        width: 60vw;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
@@ -264,6 +289,10 @@ footer p i {
 
     .skill {
         width: 100%;
+    }
+
+    .open-source img {
+        width: 95vw;
     }
 
     .footer-logo label {
