@@ -7,6 +7,9 @@
     --white: #ffffff;
     --light-black: #303030;
     --off-black: #141414;
+    --green: #008000;
+    --github-blue: #58a6ff;
+    --dark-white: #8b949e;
     --black: #000000;
 }
 
@@ -71,7 +74,7 @@ html {
     text-align: center;
     width: 60%;
     margin: 20px auto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -125,7 +128,20 @@ html {
     font-size: 13px;
 }
 
-/* <============= Home Section CSS =============> */
+/* <============= Open Source Section CSS =============> */
+.open-source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-source img {
+    width: 30vw;
+}
+
+.open-source .title {
+    font-size: 24px;
+}
 
 .contribute {
     display: flex;
@@ -133,9 +149,43 @@ html {
     align-items: center;
 }
 
+.contribute a {
+    padding: 6px 8px;
+    color: var(--green);
+    font-weight: 800;
+    background-color: var(--off-black);
+    border: 1px solid var(--light-black);
+    border-radius: 12px;
+    transition-duration: 100ms;
+}
+
+.contribute a:hover {
+    background-color: var(--light-black);
+}
+
 .contribute i {
-    margin: 10px;
-    font-size: 20px;
+    margin: 10px 5px;
+    background-color: transparent;
+}
+
+.contributing-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    margin: 20px auto;
+}
+
+.contributing-links a {
+    margin: 5px;
+    font-weight: 500;
+    color: var(--github-blue);
+    border: 1px solid var(--black);
+}
+
+.contributing-links a:hover {
+    border-bottom: 1px solid var(--github-blue);
 }
 
 /* <============= Footer Section CSS =============> */
@@ -175,8 +225,9 @@ footer p i {
 .footer-text {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: center;
+    font-size: 12px;
 }
 
 .footer-media-links {
@@ -185,7 +236,7 @@ footer p i {
 }
 
 .footer-media-links i {
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
 }
 
@@ -208,6 +259,18 @@ footer p i {
     .skill {
         width: 45%;
     }
+
+    .open-source {
+        flex-wrap: wrap;
+    }
+
+    .open-source img {
+        width: 60vw;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
@@ -226,6 +289,10 @@ footer p i {
 
     .skill {
         width: 100%;
+    }
+
+    .open-source img {
+        width: 95vw;
     }
 
     .footer-logo label {
