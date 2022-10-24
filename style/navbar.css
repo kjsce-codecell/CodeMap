@@ -79,7 +79,7 @@ nav * {
     background-color: var(--black);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .logo label {
         color: var(--white);
         font-weight: 700;
