@@ -81,6 +81,12 @@ html {
 /* <============= Home Section CSS =============> */
 .home {
     margin: 20px;
+    background-color: transparent;
+}
+
+.home img {
+    width: 200px;
+    margin: auto auto;
 }
 
 .roadmap {
@@ -107,9 +113,10 @@ html {
 }
 
 .skill {
+    display: block;
     width: 300px;
+    overflow: hidden;
     margin: 10px;
-    padding: 20px;
     border: 2px solid var(--light-black);
     border-radius: 8px;
 }
@@ -122,10 +129,45 @@ html {
     color: var(--secondary-color);
     font-size: 22px;
     font-weight: 800;
+    padding: 20px 0 0 20px;
+}
+
+.skill-header i {
+    margin: 0px 5px;
+    color: var(--off-white);
 }
 
 .skill-para {
     font-size: 13px;
+    padding: 0 0 0 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.new {
+    display: flex;
+    justify-content: right;
+}
+
+.new p {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: var(--green);
+    border-radius: 2px;
+}
+
+.coming-soon {
+    display: flex;
+    justify-content: right;
+}
+
+.coming-soon p {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
 }
 
 /* <============= Open Source Section CSS =============> */
@@ -273,7 +315,7 @@ footer p i {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 420px) {
     .home-title {
         font-size: 22px;
     }
